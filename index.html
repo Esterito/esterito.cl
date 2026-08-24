@@ -1,1 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Esterito | Comediante, artista y creadora</title>
+
+  <meta name="description" content="Esterito — comediante, artista y creadora. Shows, Chicas del Montón, videos y mucho más.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f6e9d5;
+      color: #171717;
+      line-height: 1.5;
+    }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+      background:
+        radial-gradient(circle at 20% 20%, #e94f37 0 8%, transparent 8.5%),
+        radial-gradient(circle at 80% 70%, #e94f37 0 7%, transparent 7.5%),
+        #f6e9d5;
+    }
+
+    .small {
+      font-size: 14px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: clamp(70px, 18vw, 180px);
+      line-height: 0.8;
+      letter-spacing: -8px;
+      text-transform: uppercase;
+      color: #e94f37;
+      text-shadow: 7px 7px 0 #171717;
+      margin-bottom: 35px;
+    }
+
+    .tagline {
+      max-width: 650px;
+      font-size: clamp(20px, 4vw, 34px);
+      font-weight: bold;
+      margin-bottom: 35px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #171717;
+      color: #f6e9d5;
+      text-decoration: none;
+      padding: 15px 30px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: transform 0.2s;
+    }
+
+    .button:hover {
+      transform: translate(-4px, -4px);
+    }
+
+    section {
+      padding: 90px 8%;
+    }
+
+    .about {
+      background: #171717;
+      color: #f6e9d5;
+    }
+
+    .about h2,
+    .projects h2 {
+      font-size: clamp(45px, 8vw, 90px);
+      text-transform: uppercase;
+      line-height: 0.9;
+      margin-bottom: 35px;
+    }
+
+    .about p {
+      max-width: 750px;
+      font-size: 22px;
+    }
+
+    .projects {
+      background: #f6e9d5;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 25px;
+      margin-top: 50px;
+    }
+
+    .card {
+      border: 4px solid #171717;
+      padding: 30px;
+      min-height: 220px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .card h3 {
+      font-size: 30px;
+      text-transform: uppercase;
+    }
+
+    .card p {
+      margin-top: 15px;
+    }
+
+    .contact {
+      text-align: center;
+      background: #e94f37;
+      color: #171717;
+    }
+
+    .contact h2 {
+      font-size: clamp(45px, 8vw, 90px);
+      text-transform: uppercase;
+      line-height: 0.9;
+      margin-bottom: 30px;
+    }
+
+    footer {
+      background: #171717;
+      color: #f6e9d5;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        text-shadow: 4px 4px 0 #171717;
+        letter-spacing: -4px;
+      }
+
+      section {
+        padding: 70px 25px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="small">Comediante · Artista · Creadora</div>
+
+    <h1>ESTERITO</h1>
+
+    <p class="tagline">
+      Intentando convertirme en un ícono mientras descubro cómo se hace.
+    </p>
+
+    <a class="button" href="#proyectos">Entrar</a>
+  </header>
+
+
+  <section class="about">
+    <h2>¿Quién es Esterito?</h2>
+
+    <p>
+      Esterito es una comediante y creadora que convirtió su obsesión
+      por la cultura pop, las historias cotidianas y el absurdo de ser
+      una persona adulta en material para hacer reír.
+    </p>
+  </section>
+
+
+  <section class="projects" id="proyectos">
+
+    <h2>El universo Esterito</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <div>
+          <h3>Comedia</h3>
+          <p>
+            Shows, stand up, fechas y proyectos en vivo.
+          </p>
+        </div>
+
+        <a class="button" href="#contacto">Contratar</a>
+      </div>
+
+
+      <div class="card">
+        <div>
+          <h3>Chicas del Montón</h3>
+          <p>
+            El podcast donde hablamos de esas cosas que nadie sabe
+            muy bien cómo hablar.
+          </p>
+        </div>
+
+        <a class="button" href="#contacto">Ver podcast</a>
+      </div>
+
+
+      <div class="card">
+        <div>
+          <h3>Videos</h3>
+          <p>
+            Comedia, historias, personajes y otras obsesiones.
+          </p>
+        </div>
+
+        <a class="button" href="#contacto">Ver videos</a>
+      </div>
+
+
+      <div class="card">
+        <div>
+          <h3>Prensa</h3>
+          <p>
+            Entrevistas, apariciones y material para medios.
+          </p>
+        </div>
+
+        <a class="button" href="#contacto">Prensa</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="contact" id="contacto">
+
+    <h2>Hablemos.</h2>
+
+    <p style="font-size: 22px; margin-bottom: 30px;">
+      Shows · Colaboraciones · Prensa · Proyectos
+    </p>
+
+    <a class="button" href="mailto:hola@esterito.cl">
+      hola@esterito.cl
+    </a>
+
+  </section>
+
+
+  <footer>
+    © 2026 Esterito · esterito.cl
+  </footer>
+
+</body>
+</html>
